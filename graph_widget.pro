@@ -7,8 +7,7 @@ HEADERS +=  graph.h \
 			graph_view.h \
 			node.h
 	
-SOURCES +=  graph.cpp \
-			main.cpp \
+SOURCES +=  main.cpp \
 			graph_view.cpp\
 			node.cpp
 			
