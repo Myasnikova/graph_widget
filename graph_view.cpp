@@ -24,6 +24,8 @@ CGraphView::CGraphView(QWidget *parent): QWidget(parent)
 CGraphView::~CGraphView()
 {
 	scene->clear();
+	delete scene;
+	scene = nullptr;
 }
 
 void CGraphView::onSceneClicked(QPointF p)
