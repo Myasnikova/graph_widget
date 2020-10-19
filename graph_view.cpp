@@ -29,7 +29,7 @@ CGraphView::~CGraphView()
 void CGraphView::onSceneClicked(QPointF p)
 {
     CNode *item = new CNode(scene->getNodeCount());
-    item->setPos(p);
+    item->setPos(p - ARROW_HEAD_OFFSET);
     scene->addItem(item);
 	g.addNode(item->getIndex(),item);
 	scene->update();

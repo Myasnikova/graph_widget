@@ -27,7 +27,7 @@ void CNode::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
 {
 	if (event->buttons() == Qt::LeftButton)
 	{
-		this->setPos(mapToScene(event->pos()));
+		this->setPos(mapToScene(event->pos()) - ARROW_HEAD_OFFSET);
 		scene()->update();
 	}
 }
